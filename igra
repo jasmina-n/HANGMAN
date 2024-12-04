@@ -2,3 +2,22 @@ import pygame
 import random
 import os
 print(os.getcwd())
+
+pygame.init()
+winHeight = 480
+winWidth = 700
+win = pygame.display.set_mode((winWidth, winHeight))
+
+# Colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+LIGHT_BLUE = (102, 255, 255)
+
+# Fonts
+btn_font = pygame.font.SysFont("arial", 20)
+guess_font = pygame.font.SysFont("monospace", 24)
+lost_font = pygame.font.SysFont('arial', 45)
+
