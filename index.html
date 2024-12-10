@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hangman O'yini</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Intro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="game-container">
-    <h1>Hangman O'yini</h1>
 
-    <!-- So'zni ko'rsatish (yashirilgan harflar) -->
-    <div class="word-container">
-      <span id="word">_ _ _ _ _</span>
+    <!-- Intro Sahifa -->
+    <div id="introPage">
+        <div class="intro-section">
+            <h2>Oyin Dunyosiga Xush Kelibsiz!</h2>
+            <p>Oynashni boshlash uchun tugmani bosing.</p>
+            <button id="startBtn">Oynashni Boshlash</button>
+        </div>
     </div>
 
-    <!-- Xatoliklar soni -->
-    <div class="error-container">
-      <p>Xatoliklar soni: <span id="errors">0</span></p>
+    <!-- O'yin Sahifasi -->
+    <div id="gamePage">
+        <div class="game-area">
+            <h2>To'pni harakatlantiring!</h2>
+            <p>To'pni ekran ustida joylashtirib, uni belgilang.</p>
+            <div class="game-container">
+                <div class="circle" id="circle"></div>
+            </div>
+        </div>
+        <button id="backBtn">Orqaga</button>
     </div>
 
-    <!-- Harflar tugmalari -->
-    <div class="letters-container" id="letters-container">
-      <!-- Harflar tugmalari JavaScript orqali dinamik qo'shiladi -->
-    </div>
+    <footer>
+        <p>&copy; 2024 - Oyin Sahifasi</p>
+    </footer>
 
-    <!-- Hangman tasviri -->
-    <div class="hangman-container">
-      <img id="hangman-image" src="hangman0.png" alt="Hangman">
-    </div>
-
-    <!-- O'yinni qayta boshlash tugmasi -->
-    <button id="reset-btn">Yangi O'yin</button>
-  </div>
-
-  <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
