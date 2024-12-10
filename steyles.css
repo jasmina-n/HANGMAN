@@ -1,1 +1,98 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+/* Intro sahifa uchun orqa fon */
+#introPage {
+    background-image: url('img.png'); /* Orqa fon tasviri */
+    background-size: cover; /* Tasvirni ekranga moslashtirish */
+    background-position: center; /* Tasvirni markazga joylashtirish */
+    background-repeat: no-repeat; /* Tasvirni takrorlanmaslik */
+    min-height: 100vh; /* Sahifaning balandligi butun ekran balandligi bo‘lsin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Matnni oq rangga o‘zgartirish */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Matn uchun soya */
+}
+
+/* Intro sahifa tarkibi */
+.intro-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.intro-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#introPage button {
+    background-color: rgba(0, 0, 0, 0.6); /* Tugma uchun yarim shaffof fon */
+    color: #fff; /* Tugma matnining rangi */
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Tugma hover uchun animatsiya */
+}
+#introPage button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Hover effekti */
+}
+
+/* O'yin sahifasi */
+#gamePage {
+    display: none; /* Dastlab o‘yin sahifasini yashirish */
+    min-height: 100vh;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-area h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.game-area p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.game-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 2px dashed #333;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+}
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Umumiy footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
